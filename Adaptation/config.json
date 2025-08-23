@@ -1,0 +1,12 @@
+{
+    "Token":"NHNR7yhRshxNpy3LspN2-Q",
+    "business_flag": "youtu_fuxi_team1",
+    "priority_level": "LOW",
+    "elastic_level": 0,
+    "model_local_file_path": "/youtu_fuxi_team1_ceph/v_imyuewang/AD/M3DM",
+    "host_num": 1,
+    "host_gpu_num": 2,
+    "dataset_id": "e4ccc2707dd72ab7017de0e4ca2846a0",
+    "image_full_name": "mirrors.tencent.com/v_imyuewang/py38_cu111_pytorch:1.9.0",
+    "keep_alive": true
+}
