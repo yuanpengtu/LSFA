@@ -32,6 +32,7 @@ The following table lists the pretrain model used in LSFA:
 
 Put the checkpoint files in `checkpoints` folder.
 
+The finetuned weight can be obtained with code in "https://drive.google.com/file/d/1__3FcraLPhmDt9Fj5wcFOvR44rVRdQHR/view?usp=sharing".
 
 ## 1.Extract features for adaptation
 cd FeatureExtract
