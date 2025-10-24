@@ -81,7 +81,7 @@ class Model(torch.nn.Module):
                                               checkpoint_path=checkpoint_path,
                                               **kwargs)
         #print(classname)
-        #newdict = torch.load('/youtu_fuxi_team1_ceph/yuanpengtu/noise_3D/M3DM_pretrain/savemodel/modelrgb_vitbase_finetunewholenew_fcall_bnrgb'+classname+'.pkl')
+        #newdict = torch.load('./yuanpengtu/noise_3D/M3DM_pretrain/savemodel/modelrgb_vitbase_finetunewholenew_fcall_bnrgb'+classname+'.pkl')
         #parm = {}
         #for key in newdict.keys():
         #    if key.startswith("model_encoder."):
@@ -92,7 +92,7 @@ class Model(torch.nn.Module):
         #self.rgb_backbone = timm.create_model(model_name='wide_resnet50_2', pretrained=True,
         #                                      checkpoint_path=checkpoint_path,
         #                                      **kwargs)
-        #newdict = torch.load('/youtu_fuxi_team1_ceph/yuanpengtu/noise_3D/M3DM_pretrain/savemodel/modelrgb_vitbase_finetunewholenew_fcall_bnresnet50'+classname+'.pkl')
+        #newdict = torch.load('./yuanpengtu/noise_3D/M3DM_pretrain/savemodel/modelrgb_vitbase_finetunewholenew_fcall_bnresnet50'+classname+'.pkl')
         #parm = {}
         #for key in newdict.keys():
         #    if key.startswith("model_encoder."):
@@ -110,7 +110,7 @@ class Model(torch.nn.Module):
             self.xyz_backbone = PointTransformer(group_size=group_size, num_group=num_group, encoder_dims=256)
             self.xyz_backbone.load_model_from_pb_ckpt("checkpoints/Point-BERT.pth")
         
-        newdict = torch.load('/youtu_fuxi_team1_ceph/yuanpengtu/noise_3D/M3DM_pretrain/savemodel/modelrgb_vitbase_finetunewholenew_fcall_bnpointnewv'+classname+'.pkl')
+        newdict = torch.load('./yuanpengtu/noise_3D/M3DM_pretrain/savemodel/modelrgb_vitbase_finetunewholenew_fcall_bnpointnewv'+classname+'.pkl')
         parm = {}
         for key in newdict.keys():
             if key.startswith("point_encoder."):
